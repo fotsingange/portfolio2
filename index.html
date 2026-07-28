@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Développeur Web Full Stack Senior</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="custom-cursor" aria-hidden="true"></div>
+  <div id="particles-js" class="particles" aria-hidden="true"></div>
+
+  <header class="header" id="top">
+    <nav class="navbar" aria-label="Navigation principale">
+      <a class="logo" href="#hero"><span> <img src="logo.jpg" alt="logo" width="90"></span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">☰</button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#experience">Expérience</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="theme-toggle" id="themeToggle" aria-pressed="true">Mode clair</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+ <section id="Accueil" class="hero">
+                <div class="texte">
+                  <h1>Bonjour, je suis FOTSING KAMALA</h1>
+                  <h2>Etudiante en Génie Logiciel</h2>
+                  <p>je suis Passionnée par le développement web et la programmation.</p>
+                  <div class="hero-actions">
+          <a class="btn btn-primary" href="images/cv.pdf" download>Télécharger le CV</a>
+          <a class="btn btn-secondary" href="#contact">Me contacter</a>
+        </div>
+        <div class="social-links" aria-label="Réseaux sociaux">
+          <a href="#" aria-label="GitHub">GitHub</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" aria-label="X">X</a>
+        </div>
+                  </div>
+                  <div>
+                    <img src="photo.jpg" alt="photo" width="190">
+                  </div>
+                  </section>
+    <section class="about section reveal" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">À propos</p>
+      </div>
+      <div class="about-grid">
+        <article class="glass about-text">
+          <p>Je m'appelle Fotsing et je suis étudiante en Génie Logiciel.
+                        passionnée par le développement web, j'aime apprendre de 
+                        nouvelles technologies et créer des sites web modernes. Je 
+                        suis une personne sérieuse, curieuse et motivée, toujours
+                          prête à améliorer mes compétences en programation et à 
+                          relever de nouveaux défis.</p>
+          <p>Ma passion pour le détail, la performance et l'ergonomie me pousse à transformer chaque projet en expérience fluide et crédible. J'interviens aussi bien sur le front-end que sur le back-end, avec une forte culture produit.</p>
+          <p>Je maîtrise un large éventail de technologies modernes et je privilégie des solutions propres, maintenables et évolutives. Ma philosophie est simple : construire moins, mais mieux.</p>
+        </article>
+        <div class="stats-grid">
+          <div class="stat-card glass"><span class="stat-number" data-target="0">0</span><span>Années d'expérience</span></div>
+          <div class="stat-card glass"><span class="stat-number" data-target="1">1</span><span>Projets réalisés</span></div>
+          <div class="stat-card glass"><span class="stat-number" data-target="0">0</span><span>Clients satisfaits</span></div>
+          <div class="stat-card glass"><span class="stat-number" data-target="0">0</span><span>Certifications</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section reveal" id="skills">
+      <div class="section-heading"><p class="eyebrow">Compétences</p><h2>Stack technique maîtrisée</h2></div>
+      <div class="skills-grid">
+        <div class="skill-card glass">
+          <h3>Front-End</h3>
+          <ul>
+            <li data-skill="95">HTML5</li>
+            <li data-skill="92">CSS3</li>
+            <li data-skill="90">JavaScript</li>
+          </ul>
+        </div>
+    </section>
+
+    <section class="experience section reveal" id="experience">
+      <div class="section-heading"><p class="eyebrow">Expérience professionnelle</p><h2>Parcours récent</h2></div>
+      <div class="timeline">
+        <article class="timeline-item glass">
+          <h3>Développeur Web</h3>
+          <p>Création de sites et plateformes sur mesure, refonte UI/UX et livraison de solutions fiables pour divers clients.</p>
+        </article>
+      </div>
+    </section>
+    <section class="portfolio section reveal" id="portfolio">
+      <div class="section-heading"><p class="eyebrow">Portfolio</p><h2>Quelques réalisations sélectionnées</h2></div>
+      <div class="filter-bar" role="tablist" aria-label="Filtrer les projets">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="front">Front-End</button>
+        <button class="filter-btn" data-filter="back">Back-End</button>
+        <button class="filter-btn" data-filter="full">Full Stack</button>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card glass" data-category="full">
+          <img src="images/project-1.jpg" alt="Projet e-commerce premium" loading="lazy" />
+          <div class="project-body">
+            <h3>E-commerce Luxe</h3>
+            <p>Plateforme haut de gamme avec parcours d'achat optimisé et interface immersive.</p>
+            <p class="tech">Next.js, Node.js, Stripe</p>
+            <div class="project-actions">
+              <a href="#" class="btn btn-small">Démo</a>
+              <a href="#" class="btn btn-small btn-secondary">GitHub</a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card glass" data-category="front">
+          <img src="images/project-2.jpg" alt="Dashboard analytique" loading="lazy" />
+          <div class="project-body">
+            <h3>Dashboard Analytique</h3>
+            <p>Interface de pilotage moderne avec visualisation de données temps réel.</p>
+            <p class="tech">Vue, Chart.js, REST</p>
+            <div class="project-actions">
+              <a href="#" class="btn btn-small">Démo</a>
+              <a href="#" class="btn btn-small btn-secondary">GitHub</a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card glass" data-category="back">
+          <img src="images/project-3.jpg" alt="API de gestion SaaS" loading="lazy" />
+          <div class="project-body">
+            <h3>API SaaS</h3>
+            <p>API robuste, sécurisée et documentée pour la gestion d'abonnements.</p>
+            <p class="tech">Laravel, PostgreSQL, Redis</p>
+            <div class="project-actions">
+              <a href="#" class="btn btn-small">Démo</a>
+              <a href="#" class="btn btn-small btn-secondary">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="services section reveal" id="services">
+      <div class="section-heading"><p class="eyebrow">Services</p><h2>Accompagnement complet</h2></div>
+      <div class="services-grid">
+        <div class="service-card glass"><h3>Développement Web</h3><p>Sites et plateformes élégants, rapides et évolutifs.</p></div>
+        <div class="service-card glass"><h3>API REST</h3><p>Back-ends structurés, sécurisés et maintenables.</p></div>
+        <div class="service-card glass"><h3>Applications SaaS</h3><p>Produits cloud pensés pour la croissance.</p></div>
+        <div class="service-card glass"><h3>UX/UI</h3><p>Interfaces premium centrées sur l'utilisateur.</p></div>
+        <div class="service-card glass"><h3>Maintenance</h3><p>Suivi, correctifs et amélioration continue.</p></div>
+        <div class="service-card glass"><h3>SEO</h3><p>Fondations techniques pour un bon référencement.</p></div>
+      </div>
+    </section>
+
+    <section class="testimonials section reveal" id="testimonials">
+      <div class="section-heading"><p class="eyebrow">Témoignages</p><h2>Retours clients</h2></div>
+      <div class="testimonial-slider glass" aria-live="polite">
+        <div class="testimonial-track">
+          <blockquote class="testimonial active">"Une exécution impeccable, une grande rigueur et une vraie sensibilité produit." <cite>— Client SaaS</cite></blockquote>
+          <blockquote class="testimonial">"Le rendu est premium, rapide et parfaitement pensé pour convertir." <cite>— Directeur Marketing</cite></blockquote>
+          <blockquote class="testimonial">"Une collaboration fluide et un niveau de qualité rare sur le marché." <cite>— Fondateur Tech</cite></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog section reveal" id="blog">
+      <div class="section-heading"><p class="eyebrow">Blog</p><h2>Derniers articles</h2></div>
+      <div class="blog-grid">
+        <article class="blog-card glass">
+          <h3>Construire une UI haut de gamme</h3>
+          <p>Principes visuels et techniques pour créer des interfaces élégantes sans sacrifier la performance.</p>
+        </article>
+        <article class="blog-card glass">
+          <h3>Optimiser un site pour la vitesse</h3>
+          <p>Stratégies concrètes pour améliorer les Core Web Vitals et l'expérience globale.</p>
+        </article>
+        <article class="blog-card glass">
+          <h3>Architecture front-end durable</h3>
+          <p>Comment structurer un projet pour favoriser la lisibilité, la modularité et l'évolutivité.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section reveal" id="contact">
+      <div class="section-heading"><p class="eyebrow">Contact</p><h2>Parlons de votre projet</h2></div>
+      <div class="contact-grid">
+        <form class="contact-form glass" id="contactForm" novalidate>
+          <div class="form-row">
+            <input type="text" id="name" name="name" placeholder="Nom" required aria-describedby="nameError" />
+            <span class="error" id="nameError"></span>
+          </div>
+          <div class="form-row">
+            <input type="email" id="email" name="email" placeholder="Email" required aria-describedby="emailError" />
+            <span class="error" id="emailError"></span>
+          </div>
+          <div class="form-row">
+            <textarea id="message" name="message" rows="6" placeholder="Message" required aria-describedby="messageError"></textarea>
+            <span class="error" id="messageError"></span>
+          </div>
+          <button class="btn btn-primary" type="submit">Envoyer le message</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+
+        <aside class="contact-info glass">
+          <p><strong>Téléphone :</strong> +237 670952256</p>
+          <p><strong>Email :</strong> fotsingange98@gmail.com</p>
+          <p><strong>Localisation :</strong> bafoussam, Cameroun</p>
+          <div class="social-links social-block">
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>© 2026 Développeur Web Full Stack Senior. Tous droits réservés.</p>
+      <div class="footer-links">
+        <a href="#about">À propos</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="back-to-top" id="backToTop" aria-label="Retour en haut">↑</button>
+    </div>
+  </footer>
+
+  <a class="back-to-top floating" id="backToTopFloating" href="#top" aria-label="Retour en haut">↑</a>
+  <script src="script.js"></script>
+</body>
+</html>
